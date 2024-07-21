@@ -36,3 +36,16 @@ valezuela''', para textos con saltos de linea.
 .eval()	#Este y el siguiente son super métodos
 .exec()
 
+f-strings: print (f"Mi saludo preferido es {_saludo_.strip()},  mi nombre es {_nombre_} pero mi edad es {_edad_} anhos")
+Las f-strings permiten insertar expresiones dentro de cadenas de texto.
+
+#Imprimir en un formato especifico
+_valor_=1500;
+print (_valor_)
+print("El valor de un juego en Nintendo Switch es: {:.4f}".format(_valor_))
+
+#Saltos de Linea y colocar strint entre comillas en una cadena
+print ("Hola Mundo,\nesto es genial")
+print('El author de este documento es \'EDWIN LEBRON\'')
+
+Indexación, es buscar por posición las palabras de una cadena de texto.
