@@ -27,7 +27,7 @@ Otros metodos:
 .strip(), para eliminar espacios al principio y final de la cadena.
 .lstrip() 
 .rstrip() 
-.find()
+.find(), me permite saber en que posición se encuentra un caracter o una cadena de cartacter.
 .index() 
 .len() para saber la longitud de una cadena
 print (type(_nombre_)) "Para ser que tipo de dato tengo en una variable";
