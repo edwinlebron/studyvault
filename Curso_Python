@@ -1,0 +1,14 @@
+Dentro de este documento se encuentran los apuntes del curso de Python.
+
+Clase 3: Semántica vs Sintaxis.
+Semántica: hace referencia al sentido que tiene el código.
+Si estamos trabajando con operaciones matemáticas y la entrada de datos son números la salida debe ser números.
+Sintaxis: Se refiere a la manera en que se escribe el código. La forma en que se siguen las reglas del lenguaje de programación.
+Variables: Espacios en memoria para almacenar datos. 
+El nombre de una variable no puede empezar on numeros.
+
+Tipos de Datos:
+Enteros (int): Números sin decimales.
+Flotantes (float): Números con decimales.
+Cadenas (str): Texto.
+Booleanos (bool): True o False.
