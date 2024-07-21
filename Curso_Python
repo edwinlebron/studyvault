@@ -1,14 +1,38 @@
 Dentro de este documento se encuentran los apuntes del curso de Python.
 
-Clase 3: Semántica vs Sintaxis.
+--------------------Clase 3--------------------
+Semántica vs Sintaxis.
 Semántica: hace referencia al sentido que tiene el código.
 Si estamos trabajando con operaciones matemáticas y la entrada de datos son números la salida debe ser números.
 Sintaxis: Se refiere a la manera en que se escribe el código. La forma en que se siguen las reglas del lenguaje de programación.
 Variables: Espacios en memoria para almacenar datos. 
-El nombre de una variable no puede empezar on numeros.
+El nombre de una variable no puede empezar con numeros.
 
 Tipos de Datos:
 Enteros (int): Números sin decimales.
 Flotantes (float): Números con decimales.
 Cadenas (str): Texto.
 Booleanos (bool): True o False.
+
+--------------------Clase 4--------------------
+Las funciones para textos o cadenas en Python se llaman methods (metodos).
+Ejemplo: print (_nombre_.upper())
+Otros metodos:
+.count(), para ver cuantas veces se repite un character dentro e una lista.
+.capitalize()
+.title() 
+.swapcase() 
+.replace(,) 
+.split() 
+.strip(), para eliminar espacios al principio y final de la cadena.
+.lstrip() 
+.rstrip() 
+.find()
+.index() 
+.len() para saber la longitud de una cadena
+print (type(_nombre_)) "Para ser que tipo de dato tengo en una variable";
+_variable='''Edwin lebron
+valezuela''', para textos con saltos de linea.
+.eval()	#Este y el siguiente son super métodos
+.exec()
+
