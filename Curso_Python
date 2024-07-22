@@ -49,3 +49,19 @@ print ("Hola Mundo,\nesto es genial")
 print('El author de este documento es \'EDWIN LEBRON\'')
 
 Indexación, es buscar por posición las palabras de una cadena de texto.
+
+--------------------Clase 8--------------------
+Orden de las operaciones matematicas (PEMDAS)
+P -> Paréntesis
+E -> Exponenciación
+M -> Multiplicación
+D -> División
+A -> Adición
+S -> Sustracción
+EJEMPLO DE PEMDAS
+operation_1  = 2 + 3 * 4
+operation_2  = (2 + 3) * 4
+print(operation_1)
+print(operation_2)
+operation_3 = (2+3) * (4**2)/ 8 - 1
+print(operation_3)
