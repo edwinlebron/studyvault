@@ -74,6 +74,7 @@ int(Input()): Castin se usa para cuando deseamos convertir un carácter a numér
 
 Listas en Python:
 Para crear una lista se hace igual que una variable pero los valores van contenidos en [];
+En una lista no se puede usar el metodo Find();
 Para conocer el contendo de la lista:
 1er elemento: [0]
 2do elemento: [1]
