@@ -65,3 +65,9 @@ print(operation_1)
 print(operation_2)
 operation_3 = (2+3) * (4**2)/ 8 - 1
 print(operation_3)
+
+--------------------Clase 9--------------------
+Input(): Se usa para solicitar información al usuario.
+Todo lo que se escribe en un input es un carácter por defecto.
+
+int(Input()): Castin se usa para cuando deseamos convertir un carácter a numérico.
