@@ -71,3 +71,12 @@ Input(): Se usa para solicitar información al usuario.
 Todo lo que se escribe en un input es un carácter por defecto.
 
 int(Input()): Castin se usa para cuando deseamos convertir un carácter a numérico.
+
+Listas en Python:
+Para crear una lista se hace igual que una variable pero los valores van contenidos en [];
+Para conocer el contendo de la lista:
+1er elemento: [0]
+2do elemento: [1]
+ultimo elemento: [-1]
+Si deseamos saber desde el 1er hasta el antepenultimo elemento [  :-1]
+Si deseamos saber desde el 2do hasta el tras-antepenultimo elemento [  :-2]
