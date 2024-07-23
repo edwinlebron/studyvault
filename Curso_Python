@@ -87,3 +87,27 @@ Si deseamos saber desde el 2do hasta el tras-antepenultimo elemento [  :-2]
 del nombre_lista [1] para eliminar elementos.
 Si deseamos eliminar desde el 1er hasta el antepenultimo elemento [  :-1]
 del nombre_lista: eliminar completamente la lista y no se puede usar.
+
+#SLICE, GUARDAR EN ESPACIOS DE MEMORIA DIFERENTE.
+a=[1,2,3,4,5];
+b=a;
+del a[0]
+print(a)
+print(b)
+#Lo que elimino de una lista, se elimina en la otra.
+#Solucion, consultar en que espacio de la memoria estoy guardando los datos.
+#Si imprime el mismo ID, indica que estoy guardando en el mismo espacio en memoria.
+print(id(a))
+print(id(b))
+
+#aplicar Slice:
+c=a[:] #esto copia la lista desde la posicion 0 al final.
+print(id(a))
+print(id(b))
+print(id(c)) #Ahora C guarda en otro espacio de la memoria. 
+#agregamos un valor a la lista A para ver la diferencia al copiar y borrar.
+a.append(7)
+
+print(a)
+print(b)
+print(c) #A fue copia a C en un antes de agregar el 7 y como guardan en memoria diferente entonces solo tiene lo copiado hasta su tiempo.
