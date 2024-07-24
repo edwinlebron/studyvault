@@ -111,3 +111,31 @@ a.append(7)
 print(a)
 print(b)
 print(c) #A fue copia a C en un antes de agregar el 7 y como guardan en memoria diferente entonces solo tiene lo copiado hasta su tiempo.
+
+--------------------Clase 14--------------------
+Diccionarios: En python solo almacenan dos valores la clave y el valor.
+Se crean igual una variable pero con {}.
+
+Ejemplo:
+numbers={1:"uno", 2:"dos", 3:"tres}
+print(numbers)
+eliminar el diccionario: del numbers;
+Al igual que las listas tienen sus metodos.
+Lo que esta antes de los dos puntos : entonces son las llaves.
+Tambien puedo eliminar por llave:
+del numers ["dos"];
+
+Para pedirle las llaves:
+clave=numbers.keys();
+values=numbers.values();
+Para imprimir los valores deparados en pares osea por familia, muy util para perfiles de acceso.
+pais=numbers.items();
+
+Ejercicio:
+contacts = {"Carla": {"Apellido": "Florida",
+               "Altura": 1.60,
+               "Edad": 29},
+                "Diego": {"Apellido": "Antezana",
+               "Altura": 1.80,
+               "Edad": 32}}
+print(contacts["Carla"])
