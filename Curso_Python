@@ -84,6 +84,10 @@ Si deseamos saber desde el 2do hasta el tras-antepenultimo elemento [  :-2]
 .max() para buscar el elemento mas grande de la lista.
 .min() para buscar el elemento mas pequeño de la lista.
 
+Metodos para las listas:
+.append: Agrega elementos, pero siempre lo agrega al final.
+.insert(1,"El valor"): Podemos insertar valores a la lista en una posición especifico.
+
 del nombre_lista [1] para eliminar elementos.
 Si deseamos eliminar desde el 1er hasta el antepenultimo elemento [  :-1]
 del nombre_lista: eliminar completamente la lista y no se puede usar.
