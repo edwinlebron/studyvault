@@ -70,7 +70,7 @@ print(operation_3)
 Input(): Se usa para solicitar información al usuario.
 Todo lo que se escribe en un input es un carácter por defecto.
 
-int(Input()): Castin se usa para cuando deseamos convertir un carácter a numérico.
+int(Input()): Casting se usa para cuando deseamos convertir un carácter a numérico.
 
 Listas en Python:
 Para crear una lista se hace igual que una variable pero los valores van contenidos en [];
@@ -143,3 +143,129 @@ contacts = {"Carla": {"Apellido": "Florida",
                "Altura": 1.80,
                "Edad": 32}}
 print(contacts["Carla"])
+
+--------------------Clase 15--------------------
+#Condicionales
+#uso de if
+print("Bienvenido a Piedas, Papel o Tijetas.\nEl Juego mas cabron del mundo.\nComenzemos!!!")
+jugador1=input("Juegador 1: Que objeto elijes? ").lower();
+jugador2=input("Juegador 2: Que objeto elijes? ").lower();
+valore_perm=['piedra', 'papel', 'tijera'];
+
+if jugador1 not in valore_perm or jugador2 not in valore_perm:
+    print("Alguien esta insertando un valor erroneo, favor inserar los valores permitidos.\nRecuerda, los valores permitidos son Piedra, Papel o Rijera")
+else:
+    if (jugador1 =="papel" and jugador2=="piedra") or (jugador1=='tijeras' and jugador2=='papel') or (jugador1=='piedra' and jugador2=='tijera'):
+        print("Gana juegador 1")
+    elif jugador1==jugador2:
+        print("Esto es un empate jejeje vuelvan a jugar")
+    else:
+        print("Gana Jugador 2");
+
+--------------------Clase 16--------------------
+#bucle for
+
+numbers=[1,2,3,4,5];
+#Si dedeso imprimir toda una lista de valores, puedo usar el ciclo FOR.
+for i in numbers:
+    print ("El valor de I es ",i+1);
+print(type(i))
+
+for k in range(1, 11):
+    print (k)
+
+celulares=["Samsung","Apple","Xiaomi","Pixel"];
+for y in celulares:
+    print (y)
+    
+
+#Cuando trabajamos con While, hay que indica con que inicia la varible.
+x=0;
+while x<=5:
+    if x==3:
+        break;#detiene la ejecucion del while.
+    print(x)
+    x+=1;
+
+
+#caso 2,  y usando continue para hacer saltos en la ejecucion.
+numbers=[1,2,3,4,5];
+for i in numbers:
+    if i== 4:
+        break;
+    print ("El valor de I es ",i);
+   
+
+numbers=[0,1,2,3,4,5];
+for i in numbers:
+    if i<=3:
+        continue #permite saltar y continuar 
+    print ("El valor de I es ",i);
+
+--------------------Clase 17--------------------
+#iteradores
+
+#iter: Lo que hace es ir iterando cada uno de los elementos pero sin utilizar indices.
+#lista:
+mis_carros=[1, 2,3,4,5];
+
+#crear el iterador:
+my_iter=iter(mis_carros);
+
+#usar el iterador
+#hay que usar el metodo next();
+
+print (next(my_iter))
+print (next(my_iter))
+
+#iterando sobre una cadena de textos
+nombre="Edwin"
+my_iter2=iter(nombre)
+for i in my_iter2:
+    print(i)
+
+"""
+Para los que les interesa saber por que escribio 1,limit+1,2 en la linea 7 de codigo, asi funciona la syntaxis:
+
+# range(start, stop, step)
+
+start: por donde empieza
+
+stop: donde para limit+1 = 10
+
+step: numero de posiciones que avanza
+"""
+#iterar sobre un rango de valores:
+#Introduce dentro de 1 cada uno de los elementos del rango e imprimelo en cada una de tus iteraciones.
+
+limite=13;
+#limite=14;
+for i in range(1,limite+1, 2):
+    print('El valor del for es', i)
+
+
+#GENERADORES.
+#creando un generador
+#imprimendo los numeros fibonacci
+
+def my_generador():
+    yield 1 # el Yield es por que en python no se usa la palabra return
+    yield 2
+    yield 3
+
+for valor in my_generador():
+    print(valor)
+
+
+#imprimir los numeros fibonacci
+def fibonacci(limite):
+    a, b=0, 1
+    while a < limite:
+        yield 'el valor de a es', a
+        yield 'el valor de b es', b
+        a, b=b, a+b
+
+for i in fibonacci(10):
+    print(i)
+
+    #0 1 1 2 3 5 8
