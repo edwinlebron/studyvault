@@ -282,3 +282,21 @@ def cal(n):
 
 for i in range(0,10):
     print(cal(i))
+
+
+--------------------Clase 18--------------------
+Funcion: Permite guardar logicas con tareas en especificas.
+Evitamos duplicar codigo.
+Se crea usando DEF Nombre_fun(parametro):
+
+
+#FUNCIONES:
+def salud_w():
+    print("Hola Mundo")
+
+def salud_2(name, apellido=""):
+    print ("Hola ", name)
+salud_w()
+salud_2("Edwin")
+
+#Si en una funcion de agregan mas de un parametros entonces debemos asignar valores por defecto.
