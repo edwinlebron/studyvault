@@ -269,3 +269,16 @@ for i in fibonacci(10):
     print(i)
 
     #0 1 1 2 3 5 8
+
+Otra manera de hacerlo:
+def cal(n):
+    if n < 2:
+        return n 
+    else:
+        for i in range(n):
+   
+            return cal(n-1) + cal(n-2)
+
+
+for i in range(0,10):
+    print(cal(i))
