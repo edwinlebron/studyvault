@@ -300,3 +300,11 @@ salud_w()
 salud_2("Edwin")
 
 #Si en una funcion de agregan mas de un parametros entonces debemos asignar valores por defecto.
+--------------------Clase 20--------------------
+#manejo de errores, para mas info ver  calculadora ED
+try:
+    year=int(input("Ingresa tu anho de nacimiento: "));
+    date=2024;
+    print(f"Tu edad es {date-year}");
+except ValueError:
+    print("Ingresa un año corrrecto")
