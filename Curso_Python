@@ -308,3 +308,32 @@ try:
     print(f"Tu edad es {date-year}");
 except ValueError:
     print("Ingresa un año corrrecto")
+
+--------------------Clase 21--------------------
+
+
+#la recursividad es hacer una funcion que se llame a ella misma para hacer algua operacion.
+#En este ejemplo encontramos el factorial de un numero.
+
+def factorial_num(n):
+    if n==0:
+        return 1;
+    else:
+        return n* factorial_num(n-1);
+#Si buscamos el factorial de 5, seria 5x4x2x3x2x1=120
+
+#factorial=print(factorial_num(4))
+
+#Ejercicio 2 con recursividad
+#saber cual es el numero Fibonacci segun la iteracion.
+
+def fibonacci(i):
+    if i==0:
+        return 0
+    if i==1:
+        return 1
+    else:
+        return fibonacci(i-1) + fibonacci(i-2);
+
+iteracion=6
+print(f"El numero fibanaci en la iteracion: {iteracion} es {fibonacci(iteracion)}")
