@@ -337,3 +337,82 @@ def fibonacci(i):
 
 iteracion=6
 print(f"El numero fibanaci en la iteracion: {iteracion} es {fibonacci(iteracion)}")
+
+
+--------------------Clase 22--------------------
+PROGRAMACION ORIENTA A OBJETOS
+#Las clases: Son una plantilla generica. Es el molde que contiene los atribtos del objeto, como color, tamano, peso, etc.
+#Los objetos son muestras pasticulares de la clase.
+#El constructor es una funcion propia de las clases y en el estan los atributos prinicpales.
+
+class Person:
+#__init__, es el nombre del constructor por defecto en pyhton.
+#self, significa que se llama a el mismo, pero esto viene con la funcion.
+    def __init__(self, name, age):
+        self.name=name; #de esta forma parametrizo los atibutos del constructor.
+        self.age=age;
+
+    def  saludar(self): #al colocar self significa que llamo al constructor.
+        print(f"Mi nombre es {self.name} y mi edad es {self.age}")
+
+#creando objetos:
+#Nombre del objeto=clase(parametros.)
+persona1=Person("Abel", 23)
+persona2=Person("Eva", 3)
+
+persona1.saludar()
+persona2.saludar()
+
+EJERCICIO 1.1 DE PROGRAMACION ORIENTADA A OBJETOS
+UNA CUENTA DE BANCO
+
+#Las clases: Son una plantilla generica. Es el molde que contiene los atribtos del objeto, como color, tamano, peso, etc.
+#Los objetos son muestras pasticulares de la clase.
+#El constructor es una funcion propia de las clases y en el estan los atributos prinicpales.
+
+#EJERCICIO DE UNA CUENTA BANCARIA con POO
+
+class BankAccount:
+    def __init__(self, account_holder, balance):
+        self.account_holder=account_holder;
+        self.balance=balance;
+        self.is_active=True; #Esto es una varible que no se envia por parametros.
+
+    def deposit(self, amount):
+        if self.is_active:
+            self.balance +=amount;
+            print(f"Se ha depositado {amount} y tu balance actual es de {self.balance}")
+        else:
+            print("No se puede depositar, la cuenta esta INACTIVA.")
+
+
+    def withdraw(self, amount):
+        if self.is_active:
+            if amount <= self.balance:
+                self.balance -=amount;
+                print(f"Se ha retirado {amount} y mi balance es de {self.balance}");
+        else:
+            print("No tienes fondos disponibles para hacer la transaccion.")
+
+
+    def desactivate_account(self):
+        self.is_active=False;
+        print("La cuenta ha sido desactivada")
+
+    def activare_account(self):
+        self.is_active=True;
+        print("La cuenta ha sido activada")
+
+
+#creando objetos:
+#Nombre del objeto=clase(parametros.)
+cuenta1=BankAccount("Edwin",500);
+cuenta2=BankAccount("Abel",100);
+
+#llamando metodos que es como llamar las funciones que creamos dentro de la clase.
+cuenta1.deposit(100);
+cuenta2.deposit(900);
+cuenta2.desactivate_account();
+cuenta2.deposit(500);
+cuenta2.activare_account()
+cuenta2.deposit(500)
