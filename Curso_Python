@@ -364,6 +364,7 @@ persona1.saludar()
 persona2.saludar()
 
 EJERCICIO 1.1 DE PROGRAMACION ORIENTADA A OBJETOS
+IMPORTANTE: PARA ENTENDER LOS OBJETOS VER EL EJEMPLO DE LA LIBRERIA.
 UNA CUENTA DE BANCO
 
 #Las clases: Son una plantilla generica. Es el molde que contiene los atribtos del objeto, como color, tamano, peso, etc.
