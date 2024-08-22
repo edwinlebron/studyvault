@@ -4,6 +4,9 @@ conda env list
 Crear un ambiente nuevo de Anconda con una version viaje de python y Pandas.
 conda create --name py2edwin python=3.5 pandas
 
+Instalar un ambiente desde una archivo
+conda env create --file env_test_edwin.yml
+
 Activar el ambiente 
 conda activate py2edwin
 
