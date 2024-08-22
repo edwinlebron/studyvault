@@ -12,3 +12,12 @@ conda desactivate
 
 Ver las versiones de los paquetes que tengo instalados
 conda list
+
+Ver una version especifica de un paquete
+conda list pandas
+
+Actualizar un paquete a la version mas reciente
+conda update pandas
+
+La version de pandas depende de la version de python.
+Si queremos instalar una version mas reciente de pandas.s
