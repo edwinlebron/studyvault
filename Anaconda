@@ -8,7 +8,7 @@ Activar el ambiente
 conda activate py2edwin
 
 Desactivar ambiente
-conda desactivate
+conda deactivate
 
 Ver las versiones de los paquetes que tengo instalados
 conda list
