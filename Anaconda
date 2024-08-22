@@ -28,3 +28,9 @@ Cambiar nombre a un ambiente
 Aqui crea un nuevo ambiente a partir de otro.
 conda create --name p3_edwin --copy --clone py2edwin
 
+remover paquetes
+conda remove pandas
+
+eliminar ambiente
+conda env remove --name  py2_edwin
+
