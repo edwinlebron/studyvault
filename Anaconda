@@ -1,0 +1,14 @@
+Ver ambientes instalados de Anaconda
+conda env list
+
+Crear un ambiente nuevo de Anconda con una version viaje de python y Pandas.
+conda create --name py2edwin python=3.5 pandas
+
+Activar el ambiente 
+conda activate py2edwin
+
+Desactivar ambiente
+conda desactivate
+
+Ver las versiones de los paquetes que tengo instalados
+conda list
