@@ -34,3 +34,29 @@ conda remove pandas
 eliminar ambiente
 conda env remove --name  py2_edwin
 
+Cuando Anaconda no tiene el paquete en su repositorio oficial se debe buscar en la pagina
+oficial de Anaconda.
+
+Instalar paquetes desde sitios no oficiales.
+conda install --chanel conda-forge(Este es el nombre del canal) boltons(package name)'
+conda install --channel conda-forge boltons
+
+Cuando e instala un paquete en el ambiente de conda guarda una revision,
+Que es un punto de retorno, siempre podremos retornar el ambiente de conda a esa ultima revision.
+conda list --revision
+
+Entonces si queremos ir a la revision del ambiente que no tenia problemas hacer lo siguiente:
+conda install --revision 0
+
+Compartir ambientes con otra persona.
+conda env export
+
+Para exportar solo con las dependencias que instale manualmente.
+
+conda export --from-history
+
+Para exportar sin ver las versiones 
+conda export --no-builds
+
+Para explortar pero con un archivo
+conda export --from-history --file env_edwin.yml
