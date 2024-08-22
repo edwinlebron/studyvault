@@ -20,4 +20,11 @@ Actualizar un paquete a la version mas reciente
 conda update pandas
 
 La version de pandas depende de la version de python.
-Si queremos instalar una version mas reciente de pandas.s
+Si queremos instalar una version mas reciente de pandas.
+
+conda install pandas=1.2
+
+Cambiar nombre a un ambiente
+Aqui crea un nuevo ambiente a partir de otro.
+conda create --name p3_edwin --copy --clone py2edwin
+
