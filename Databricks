@@ -4,21 +4,21 @@ Es una solución de análisis de datos en la nube. Simplifica y acelera la gesti
 Ofrece un sistema de procesamiento distribuido de datos sobre Apache Spark
 Características
 
-Soluciones de Big Data
-Es la herramienta más importante del mercado ya que ha logrado tener un control muy amplio de las características de Big Data como tal. Integra muchos tecnologías complementarias
-Trabajo en equipo
+Soluciones de Big Data,
+Es la herramienta más importante del mercado ya que ha logrado tener un control muy amplio de las características de Big Data como tal. Integra muchos tecnologías complementarias.
+Trabajo en equipo.
 Comunicación de manera integrada en equipos de datos
-Desarrollo de modelos de ML
-Gestión integrada de modelos de ML
+Desarrollo de modelos de Machine Learning.
+Gestión integrada de modelos de Machine Learning.
 Integraciones con otras soluciones de datos.
 Utilización de código a través de lenguajes como Python o Scala.
-¿Para qué sirve Databricks?
 
+¿Para qué sirve Databricks?
 Procesamiento de Big Data eficiente.
 Desarrollo de modelos de Aprendizaje Automático
-Vinculación con todo el sistema de la ciencia de datos
-Escalabilidad según las necesidades
-Flexibilidad en la nube
+Vinculación con todo el sistema de la ciencia de datos.
+Escalabilidad según las necesidades.
+Flexibilidad en la nube.
 ¡Capa gratuita!
 Funcionalidades
 
@@ -30,3 +30,85 @@ ML y AI
 Databricks unifica diferentes tipos de tecnologías en una sola plataforma robusta.
 
 Importante! Capa de pago: integra AWS, Azure y GCP.
+
+
+DataBricks una una arquitectura desentralizada.
+Donde el procesamiento no se realiza en unico nodo Central, si no que se crea se crean varios nodos para procesar partes independientes de un archivo.
+Cada Nodo para procesar el archivo se le conoce como Esclavo (Slave_1) y son orquestados por un nodo central llamado Master.
+
+Beneficios:
+Paralelismo y mayor rendimiento: Esto por que estamos procesando en varios esclavos al mismo tiempo.
+Escalabilidad en la solución.
+Tolerancia  fallos.
+Mejor manejo de grande volumenes de datos.
+Flexibilidad y adaptabilidad.
+
+Terminos importantes:
+DataFrame.
+Delta Lake.
+Que es un modelo de ML.
+Rol y trabajos de un ingeniero de datos.
+
+Leer archivos del curso con:
+Pyspark
+df1 = spark.read.format("csv").option("header", "true").load("dbfs:/FileStore/Curso_databricks/2015_summary.csv")
+df2 = spark.read.format("json").load("dbfs:/FileStore/Curso_databricks/transacciones.json")
+
+# Additional files uploaded
+# dbfs:/FileStore/Curso_databricks/persona.data
+# dbfs:/FileStore/Curso_databricks/transacciones.xml
+
+Pandas:
+import pandas as pd
+
+df1 = pd.read_csv("/dbfs/FileStore/Curso_databricks/2015_summary.csv")
+df2 = pd.read_json("/dbfs/FileStore/Curso_databricks/transacciones.json")
+
+# Additional files uploaded
+# /dbfs/FileStore/Curso_databricks/persona.data
+# /dbfs/FileStore/Curso_databricks/transacciones.xml
+
+R:
+%r
+
+require(SparkR)
+
+df1 <- read.df("dbfs:/FileStore/Curso_databricks/2015_summary.csv", "csv")
+df2 <- read.df("dbfs:/FileStore/Curso_databricks/transacciones.json", "json")
+
+# Additional files uploaded
+# dbfs:/FileStore/Curso_databricks/persona.data
+# dbfs:/FileStore/Curso_databricks/transacciones.xml
+
+Scala:
+%scala
+
+val df1 = spark.read.format("csv").load("dbfs:/FileStore/Curso_databricks/2015_summary.csv")
+val df2 = spark.read.format("json").load("dbfs:/FileStore/Curso_databricks/transacciones.json")
+
+// Additional files uploaded
+// dbfs:/FileStore/Curso_databricks/persona.data
+// dbfs:/FileStore/Curso_databricks/transacciones.xml
+
+Ruta de mi tabla:
+/FileStore/tables/2015_summary.csv
+
+Transformaciones en Spark:
+Son logicas a realizar sobre un objeto de spark.
+
+Tipos:
+UDF: transformaciones definidas por el usuario.
+
+En apache Spark las transaformaciones son ejecutadas por una accion.
+Si tenemos la T1, T2 y T3 todas se van a ejecutar cuando invoquemos la Accion.
+
+RDD:
+Resilient Distributed Dataset.
+
+Coleccion Inmutable, es decir que no se puede modificar.
+Los objetos creados en Databricks no pueden ser modificados.
+
+Los RDD aceptan transformaciones y acciones.
+
+
+
