@@ -2,7 +2,7 @@
 Este es un repositorio con los apuntes que voy tomando en mi camino como aprendriz del MUNDO TECH!
 <h2>APUNTES DEL CURSO PYTHON</h2>
 <ul>
-  <li><a href="Curso_Python.txt">Curso_Python</a>
+  <li><a href="[Curso_Python.txt](https://github.com/edwinlebron/studyvault/blob/main/Curso_Python)">Curso_Python</a>
 </ul>
 
 <h2>APUNTES DEL CURSO DATABRICKS Y SPARK</h2>
