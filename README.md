@@ -1,5 +1,9 @@
 # studyvault
 Este es un repositorio con los apuntes que voy tomando en mi camino como aprendriz del MUNDO TECH!
+<h2>APUNTES DEL CURSO PYTHON</h2>
+<ul>
+  <li><a href="Curso_Python.txt">Curso_Python</a>
+</ul>
 
 <h2>APUNTES DEL CURSO DATABRICKS Y SPARK</h2>
 <ul>
@@ -12,4 +16,4 @@ Este es un repositorio con los apuntes que voy tomando en mi camino como aprendr
                     <li><a href="07.Spark SQL.html">07.Spark SQL</a>
                        <li><a href="08.Clase - Ejemplo practico de UDF.html">08.Clase - Ejemplo practico de UDF</a>
                        <li><a href="09.Resolucion - UDF.html">09.Resolucion - UDF</a>
-                       </li>
+</ul>
