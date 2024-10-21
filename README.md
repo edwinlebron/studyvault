@@ -2,7 +2,6 @@
 Este es un repositorio con los apuntes que voy tomando en mi camino como aprendriz del MUNDO TECH!
 
 <h2>APUNTES DEL CURSO DATABRICKS Y SPARK</h2>
-<ul>
   <li><a href="01.DataBricks y Apache Spark.html">01.DataBricks y Apache Spark</a>
      <li><a href="02.Spark Session y RDD en Apache Spark.html">02.Spark Session y RDD en Apache Spark</a>
         <li><a href="03.Resolucion - RDD.html">03.Resolucion - RDD</a>
