@@ -9,7 +9,7 @@ Este es un repositorio con los apuntes que voy tomando en mi camino como aprendr
            <li><a href="https://example.com">04.Lectura_de_Datos</a>
               <li><a href="https://example.com">05.Laboratorio - PySpark SQL - Parte 1</a>
                  <li><a href="https://example.com">06.Laboratorio - PySpark SQL - Parte 2</a>
-                    <li><a href="https://example.com>"07.Spark SQL</a>
+                    <li><a href="https://example.com">07.Spark SQL</a>
                        <li><a href="https://example.com">08.Clase - Ejemplo practico de UDF</a>
                        <li><a href="https://example.com">09.Resolucion - UDF</a>
                        </li>
