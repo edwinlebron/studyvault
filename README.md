@@ -11,3 +11,6 @@ Este es un repositorio con los apuntes que voy tomando en mi camino como aprendr
                     <li><a href="07.Spark SQL.html">07.Spark SQL</a>
                        <li><a href="08.Clase - Ejemplo practico de UDF.html">08.Clase - Ejemplo practico de UDF</a>
                        <li><a href="09.Resolucion - UDF.html">09.Resolucion - UDF</a>
+
+<h2>APUNTES DEL CURSO Ingenieria de Datos</h2>
+<li><a href="Ingeniero_de_datos.html">Rol del Ingeniero de Datos</a>
